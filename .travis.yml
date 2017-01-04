@@ -4,3 +4,12 @@ jdk:
   - oraclejdk7
   - openjdk7
   - oraclejdk8
+
+deploy:
+  provider: bintray
+  file: build/travis.publish.config
+  user: li-kafka
+  key: 
+  dry-run: true
+  on: master
+
